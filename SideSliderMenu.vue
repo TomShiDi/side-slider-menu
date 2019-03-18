@@ -94,6 +94,7 @@
     box-shadow: 2px 2px 15px rgba(244, 255, 192, 0.61);
     transition: width .14s linear;
     -webkit-transition: width .14s linear;
+    -o-transition: width .14s linear;
   }
   .head-area{
     display: flex;
@@ -153,8 +154,11 @@
     width: 255px;
 
   }
-  .menu-div>ul li>a:hover{
-    background-image: -webkit-gradient(linear,0% 0%,100% 100%,color-stop(0%, rgba(168, 255, 136, 0.31)),color-stop(100%, rgba(168, 255, 136, 0.8)));
+  .menu-div>ul li>a:hover {
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, rgba(168, 255, 136, 0.31)), color-stop(100%, rgba(168, 255, 136, 0.8)));
+    background-image: -o-linear-gradient(rgba(168, 255, 136, 0.31),rgba(168, 255, 136, 0.8));
+    background-image: linear-gradient(rgba(168, 255, 136, 0.31), rgba(168, 255, 136, 0.8));
+    background-image: -webkit-linear-gradient(rgba(168, 255, 136, 0.31), rgba(168, 255, 136, 0.8));
   }
 
 </style>
